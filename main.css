@@ -29,6 +29,20 @@ header {
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-template-rows: 100px repeat(11, 50px);
+  color: #fff;
+}
+
+.sidebar-icon, 
+.logo-icon {
+  fill: #fff;
+}
+
+.sidebar-icon {
+  max-width: 30px;
+}
+
+.logo-icon {
+  max-width: 45px;
 }
 
 
