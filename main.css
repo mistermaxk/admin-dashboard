@@ -2,10 +2,18 @@
  * @mistermaxk 2026
  */
 
+:root {
+  --skyblue: rgb(28, 151, 245);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -23,9 +31,47 @@ header {
   grid-template-rows: 1fr 2fr;
 }
 
+header svg {
+  max-width: 30px;
+}
+
+.search input {
+  border-radius: 25px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+.user-shortcuts .avatar {
+  max-width: 30px;
+}
+
+.user-shortcuts p {
+  display: inline;
+}
+
+.user-welcome {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.user-welcome .avatar {
+  max-width: 50px;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header-menu button {
+  padding: 8px 16px;
+  background-color: var(--skyblue);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
 #sidebar {
   grid-area: 1 / 1 / 3 / 2;
-  background-color: rgb(28, 151, 245);
+  background-color: var(--skyblue);
   display: grid;
   grid-template-columns: 100px 1fr;
   grid-template-rows: 100px repeat(11, 50px);
