@@ -22,12 +22,12 @@ h1, h2 {
 
 h1 {
   font-size: 0.9rem;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
 }
 
 h2 {
   font-size: 0.8rem;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -42,7 +42,7 @@ p {
 .wrapper {
  display: grid;
  grid-template-columns: 1fr 4fr;
- grid-template-rows: 1fr 6fr; 
+ grid-template-rows: 1fr 4fr; 
  min-height: 100vh;
 }
 
@@ -146,6 +146,7 @@ header svg {
   padding: 2em 1em;
   background-color: #fff;
   border-radius: 12px;
+  box-shadow: 2px 2px 2px #ccc;
 }
 
 .announce-text p {
@@ -155,7 +156,7 @@ header svg {
 #main-content {
   padding: 16px;
   grid-area: 2 / 2 / 3 / 3;
-  background-color: #eee;
+  background-color: hsl(200, 16%, 92%);
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -171,8 +172,12 @@ header svg {
 }
 
 .projects {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.project-tiles {
   display: grid;
-  grid-template-columns: autofit minmax(250px, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: autofit minmax(200px, 1fr);
   gap: 12px;
 }
@@ -180,6 +185,7 @@ header svg {
 .single-project {
   max-width: 300px;
   border-left: 10px solid rgb(205, 155, 63);
+  display: grid;
 }
 
 .single-project p {
@@ -188,6 +194,7 @@ header svg {
 
 .project-shortcuts {
   text-align: right;
+  align-self: end;
 }
 
 .project-shortcuts svg {
