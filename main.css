@@ -22,10 +22,12 @@ h1, h2 {
 
 h1 {
   font-size: 0.9rem;
+  margin-bottom: 4px;
 }
 
 h2 {
   font-size: 0.8rem;
+  margin-bottom: 4px;
 }
 
 h3 {
@@ -47,22 +49,33 @@ p {
 header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: #fff;
+  padding: 12px;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 header svg {
   max-width: 30px;
 }
 
+.search {
+  margin: 12px;
+  display: grid;
+}
+
 .search input {
   border-radius: 25px;
+  border: none;
+  background-color: #ddd;
+  min-height: 1.5rem;
+  align-self: center;
 }
 
 .avatar {
   border-radius: 50%;
 }
+
 .user-shortcuts .avatar {
   max-width: 30px;
 }
@@ -73,8 +86,8 @@ header svg {
 
 .user-welcome {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 64px;
 }
 
 .user-welcome .avatar {
@@ -82,19 +95,32 @@ header svg {
   grid-area: 1 / 1 / 3 / 2;
 }
 
+.user-welcome .user-name {
+  font-size: 1.6rem;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 12px;
+}
+
 .header-menu button {
-  padding: 8px 16px;
+  padding: 8px 8px;
   background-color: var(--skyblue);
   color: #fff;
   border: none;
   border-radius: 20px;
+  max-height: 32px;
 }
 
 #sidebar {
   grid-area: 1 / 1 / 3 / 2;
   background-color: var(--skyblue);
+  padding: 16px 0 0 24px;
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 50px 1fr;
   grid-template-rows: 100px repeat(11, 50px);
   color: #fff;
 }
@@ -105,11 +131,15 @@ header svg {
 }
 
 .sidebar-icon {
-  max-width: 30px;
+  max-width: 24px;
 }
 
 .logo-icon {
-  max-width: 45px;
+  max-width: 42px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
 }
 
 .content-box {
@@ -148,7 +178,7 @@ header svg {
 }
 
 .single-project {
-  width: 300px;
+  max-width: 300px;
   border-left: 10px solid rgb(205, 155, 63);
 }
 
@@ -156,8 +186,14 @@ header svg {
   font-size: 0.75rem;
 }
 
+.project-shortcuts {
+  text-align: right;
+}
+
 .project-shortcuts svg {
-  max-width: 30px;
+  max-width: 25px;
+  margin-top: 16px;
+  margin-left: 16px;
 }
 
 .trending {
