@@ -120,8 +120,8 @@ header svg {
   background-color: var(--skyblue);
   padding: 16px 0 0 24px;
   display: grid;
-  grid-template-columns: 50px 1fr;
-  grid-template-rows: 100px repeat(11, 50px);
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 72px repeat(11, 46px);
   color: #fff;
 }
 
@@ -131,19 +131,19 @@ header svg {
 }
 
 .sidebar-icon {
-  max-width: 24px;
+  max-width: 22px;
 }
 
 .logo-icon {
-  max-width: 42px;
+  max-width: 36px;
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .content-box {
-  padding: 2em 1em;
+  padding: 1.5em 1em;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 2px 2px 2px #ccc;
@@ -179,12 +179,12 @@ header svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: autofit minmax(200px, 1fr);
-  gap: 12px;
+  gap: 18px;
 }
 
 .single-project {
   max-width: 300px;
-  border-left: 10px solid rgb(205, 155, 63);
+  border-left: 10px solid rgb(228, 179, 87);
   display: grid;
 }
 
@@ -198,7 +198,7 @@ header svg {
 }
 
 .project-shortcuts svg {
-  max-width: 25px;
+  max-width: 20px;
   margin-top: 16px;
   margin-left: 16px;
 }
