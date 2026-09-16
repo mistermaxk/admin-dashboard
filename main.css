@@ -42,26 +42,28 @@ p {
 .wrapper {
  display: grid;
  grid-template-columns: 1fr 4fr;
- grid-template-rows: 1fr 4fr; 
+ grid-template-rows: 1fr 5fr; 
  min-height: 100vh;
 }
 
 header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: #fff;
-  padding: 12px;
+  padding: 20px 24px 8px;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40px 1fr;
+  z-index: 100;
+  box-shadow: #aaa 0 3px 4px;
 }
 
 header svg {
-  max-width: 30px;
+  max-width: 24px;
 }
 
-.search {
-  margin: 12px;
+.search form {
   display: grid;
+  grid-template-columns:  35px 1fr;
 }
 
 .search input {
@@ -69,25 +71,37 @@ header svg {
   border: none;
   background-color: #ddd;
   min-height: 1.5rem;
-  align-self: center;
 }
 
 .avatar {
   border-radius: 50%;
 }
 
+.user-shortcuts {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 30px 30px 120px;
+  justify-content: center;
+  align-content: start;
+  align-items: center;
+  column-gap: 24px;
+}
+
 .user-shortcuts .avatar {
   max-width: 30px;
 }
 
-.user-shortcuts p {
-  display: inline;
+.user-shortcuts .user-name {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .user-welcome {
   display: grid;
   grid-template-columns: 64px 1fr;
   grid-template-rows: 64px;
+  font-weight: bold;
+  align-items: center;
 }
 
 .user-welcome .avatar {
@@ -95,15 +109,20 @@ header svg {
   grid-area: 1 / 1 / 3 / 2;
 }
 
+.hello {
+  font-size: 0.7rem;
+}
+
 .user-welcome .user-name {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .header-menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  gap: 12px;
+  grid-template-columns: repeat(3, 80px);
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
 }
 
 .header-menu button {
@@ -113,6 +132,7 @@ header svg {
   border: none;
   border-radius: 20px;
   max-height: 32px;
+  font-size: .75rem;
 }
 
 #sidebar {
@@ -135,10 +155,12 @@ header svg {
 }
 
 .logo-icon {
+  margin-left: -4px;
   max-width: 36px;
 }
 
 .logo-text {
+  padding-top: 6px;
   font-size: 1.2rem;
 }
 
@@ -146,7 +168,7 @@ header svg {
   padding: 1.5em 1em;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 2px 2px 2px #ccc;
+  box-shadow: #aaa 2px 2px 2px ;
 }
 
 .announce-text p {
@@ -184,7 +206,7 @@ header svg {
 
 .single-project {
   max-width: 300px;
-  border-left: 10px solid rgb(228, 179, 87);
+  border-left: 8px solid rgb(228, 179, 87);
   display: grid;
 }
 
