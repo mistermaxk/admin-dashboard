@@ -49,7 +49,7 @@ p {
 header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: #fff;
-  padding: 20px 24px 8px;
+  padding: 20px 48px 4px;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 40px 1fr;
@@ -81,7 +81,7 @@ header svg {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
   grid-template-columns: 30px 30px 120px;
-  justify-content: center;
+  justify-content: end;
   align-content: start;
   align-items: center;
   column-gap: 24px;
@@ -120,9 +120,9 @@ header svg {
 .header-menu {
   display: grid;
   grid-template-columns: repeat(3, 80px);
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 24px;
 }
 
 .header-menu button {
@@ -165,7 +165,7 @@ header svg {
 }
 
 .content-box {
-  padding: 1.5em 1em;
+  padding: 1.2em 1em;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: #aaa 2px 2px 2px ;
