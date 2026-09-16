@@ -14,6 +14,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: hsl(200, 16%, 92%);
 }
 
 h1, h2 {
@@ -167,7 +168,7 @@ header svg {
 .content-box {
   padding: 1.2em 1em;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: #aaa 2px 2px 2px ;
 }
 
@@ -176,13 +177,19 @@ header svg {
 }
 
 #main-content {
+  margin-top: 16px;
   padding: 16px;
+  max-height: 640px;
   grid-area: 2 / 2 / 3 / 3;
-  background-color: hsl(200, 16%, 92%);
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 16px;
+  gap: 8px 24px;
+}
+
+.announcements, 
+.trending {
+  max-width: 220px;
 }
 
 .announcements {
@@ -200,12 +207,13 @@ header svg {
 .project-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: autofit minmax(200px, 1fr);
+  grid-template-rows: autofit minmax(160px, 1fr);
   gap: 18px;
 }
 
 .single-project {
-  max-width: 300px;
+  max-width: 380px;
+  min-height: 160px;
   border-left: 8px solid rgb(228, 179, 87);
   display: grid;
 }
@@ -230,6 +238,7 @@ header svg {
 }
 
 .trending-text {
+  padding-left: 16px;
   display: grid;
   gap: 18px;
 }
