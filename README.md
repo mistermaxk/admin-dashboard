@@ -1,2 +1,2 @@
 # admin-dashboard
-Utilizing CSS Grid with Flexbox 
+Utilizing CSS Grid to build a user dashboard front-end.
